@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.container {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#141414, #003359);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+    color: #f0ddcf;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputContainer {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 3px;
+    box-shadow: 3px 3px 13px rgba(0, 0, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputContainer input {
+    background-color: transparent;
+    font-size: 20px;
+    color: #FFF;
+    outline: none;
+    margin-right: 9px;
 }
 
-.App-link {
-  color: #61dafb;
+.inputContainer input::placeholder {
+    color:#f0ddcf
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transform: transform 0.5;
+}
+
+.search:hover {
+    transform: scale(1.2);
+}
+
+.cardResults {
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 500px;
+    width: 320px;
+}
+
+.cardResults h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+.cardResults span {
+    text-align: center;
+    padding: 5px;
 }
